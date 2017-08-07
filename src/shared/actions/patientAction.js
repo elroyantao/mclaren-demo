@@ -55,7 +55,7 @@ export function fetchPatientsActivityFailure() {
 
 export const fetchPatientsActivity = () => (dispatch) => {
   dispatch(fetchPatientsActivityRequest())
-  return fetch('/api/activity')
+  return fetch('/api/activity', { method: 'GET' })
     .then((response) => {
       if (!response.ok) throw Error(response.statusText)
       return response.json()

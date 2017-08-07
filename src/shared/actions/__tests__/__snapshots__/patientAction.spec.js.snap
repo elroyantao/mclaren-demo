@@ -37,6 +37,66 @@ Array [
 ]
 `;
 
+exports[`patient actions fetchPatientsActivity()  a successful fetch 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "FETCH_PATIENTSACTIVITY_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "activities": Object {
+        "data": Array [
+          1,
+          2,
+          3,
+        ],
+      },
+      "type": "FETCH_PATIENTSACTIVITY_RESPONSE",
+    },
+  ],
+]
+`;
+
+exports[`patient actions fetchPatientsActivity()  an unsuccessful fetch 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "FETCH_PATIENTSACTIVITY_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "type": "FETCH_PATIENTSACTIVITY_FAILURE",
+    },
+  ],
+]
+`;
+
+exports[`patient actions fetchPatientsActivityFailure() 1`] = `
+Object {
+  "type": "FETCH_PATIENTSACTIVITY_FAILURE",
+}
+`;
+
+exports[`patient actions fetchPatientsActivityRequest() 1`] = `
+Object {
+  "type": "FETCH_PATIENTSACTIVITY_REQUEST",
+}
+`;
+
+exports[`patient actions fetchPatientsActivityResponse() 1`] = `
+Object {
+  "activities": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "FETCH_PATIENTSACTIVITY_RESPONSE",
+}
+`;
+
 exports[`patient actions fetchPatientsFailure() 1`] = `
 Object {
   "type": "FETCH_PATIENTS_FAILURE",
@@ -57,5 +117,16 @@ Object {
     3,
   ],
   "type": "FETCH_PATIENTS_RESPONSE",
+}
+`;
+
+exports[`patient actions setList 1`] = `
+Object {
+  "patients": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "SET_LIST",
 }
 `;
