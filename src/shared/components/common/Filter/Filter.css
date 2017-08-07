@@ -1,0 +1,30 @@
+.Filter {
+  margin: 10px
+}
+
+.Filter-button {
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: 1px solid #1abc9c;
+  outline: none;
+  font-size: 15px;
+}
+.Filter-button:first-of-type {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.Filter-button:last-of-type {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.Filter-button--active {
+  composes: Filter-button;
+  background-color: #1abc9c;
+  color: white;
+  font-weight: bold;
+}

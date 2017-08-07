@@ -1,0 +1,7 @@
+export { default as patients } from './patientsReducer'
+export { default as loading } from './loadingReducer'
+export { default as activities } from './activityReducer'
+export { default as patientActivities } from './patientActivityReducer'
+export { default as list } from './listReducer'
+export { default as filters } from './filterReducer'
+export { default as sortBy } from './sortReducer'

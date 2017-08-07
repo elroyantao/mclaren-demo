@@ -1,0 +1,22 @@
+.PatientList {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.PatientList-thead {
+  background-color: #e8dfdf;
+}
+
+.PatientList-th{
+  border: 1px solid #ccc;
+  padding: 5px 0;
+}
+.PatientList-td {
+  border: 1px solid #ccc;
+  padding: 5px 0;
+}
+
+.PatientList-td--center {
+  composes: PatientList-td;
+  text-align: center;
+}
