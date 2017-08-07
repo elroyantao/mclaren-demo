@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`patient actions fetchPatients()  a successful fetch 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "FETCH_PATIENTS_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "patients": Object {
+        "data": Array [
+          1,
+          2,
+          3,
+        ],
+      },
+      "type": "FETCH_PATIENTS_RESPONSE",
+    },
+  ],
+]
+`;
+
+exports[`patient actions fetchPatients()  an unsuccessful fetch 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "FETCH_PATIENTS_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "type": "FETCH_PATIENTS_FAILURE",
+    },
+  ],
+]
+`;
+
+exports[`patient actions fetchPatientsFailure() 1`] = `
+Object {
+  "type": "FETCH_PATIENTS_FAILURE",
+}
+`;
+
+exports[`patient actions fetchPatientsRequest() 1`] = `
+Object {
+  "type": "FETCH_PATIENTS_REQUEST",
+}
+`;
+
+exports[`patient actions fetchPatientsResponse() 1`] = `
+Object {
+  "patients": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "FETCH_PATIENTS_RESPONSE",
+}
+`;

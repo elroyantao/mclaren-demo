@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`activity actions fetchActiviyDef()  a successful fetch 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "FETCH_ACTIVITYDEF_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "activities": Object {
+        "data": Array [
+          1,
+          2,
+          3,
+        ],
+      },
+      "type": "FETCH_ACTIVITYDEF_RESPONSE",
+    },
+  ],
+]
+`;
+
+exports[`activity actions fetchActiviyDef()  an unsuccessful fetch 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "FETCH_ACTIVITYDEF_REQUEST",
+    },
+  ],
+  Array [
+    Object {
+      "type": "FETCH_ACTIVITYDEF_FAILURE",
+    },
+  ],
+]
+`;
+
+exports[`activity actions fetchActiviyDefFailure() 1`] = `
+Object {
+  "type": "FETCH_ACTIVITYDEF_FAILURE",
+}
+`;
+
+exports[`activity actions fetchActiviyDefRequest() 1`] = `
+Object {
+  "type": "FETCH_ACTIVITYDEF_REQUEST",
+}
+`;
+
+exports[`activity actions fetchActiviyDefResponse() 1`] = `
+Object {
+  "activities": Array [
+    1,
+    2,
+    3,
+  ],
+  "type": "FETCH_ACTIVITYDEF_RESPONSE",
+}
+`;

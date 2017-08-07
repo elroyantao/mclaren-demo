@@ -21,7 +21,7 @@ export function fetchPatientsFailure() {
 
 export const fetchPatients = () => (dispatch) => {
   dispatch(fetchPatientsRequest())
-  return fetch('/api/patients')
+  return fetch('/api/patients', { method: 'GET' })
     .then((response) => {
       if (!response.ok) throw Error(response.statusText)
       return response.json()

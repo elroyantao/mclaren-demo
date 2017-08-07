@@ -21,7 +21,7 @@ export function fetchActiviyDefFailure() {
 
 export const fetchActiviyDef = () => (dispatch) => {
   dispatch(fetchActiviyDefRequest())
-  return fetch('/api/activity-definition')
+  return fetch('/api/activity-definition', { method: 'GET' })
     .then((response) => {
       if (!response.ok) throw Error(response.statusText)
       return response.json()
